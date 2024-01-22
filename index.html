@@ -14,15 +14,15 @@
 </head>
 
 <body>
-  <header>
+  <header class="w-[90%] md:w-5/6 mx-auto">
     <nav>
-      <div class="navbar w-[90%] md:w-5/6 mx-auto my-4 md:my-10">
+      <div class="navbar  my-4 md:my-10">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 bg-base-100">
               <li><a class="font-bold text-c-primary" href="#">Home</a></li>
               <li><a class="text-c-header" href="#about">About</a></li>
               <li><a class="text-c-header" href="#pages">Pages</a></li>
@@ -50,7 +50,48 @@
       </div>
     </nav>
     <!-- banner -->
-
+    <div class="relative">
+      <div class="h-[200px] md:h-[550px] rounded-2xl carousel ">
+        <div class="carousel w-full">
+          <!-- slide-1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full object-cover object-center" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 -translate-x-1/2 left-[50%] top-[80%] md:top-auto md:-bottom-0 md:left-24 gap-4 ">
+              <a href="#slide4" class="btn btn-circle text-white bg-c-secondary border-c-secondary">❮</a> 
+              <a href="#slide2" class="btn btn-circle text-white bg-c-secondary border-c-secondary">❯</a>
+            </div>
+          </div> 
+          <!-- slide-2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full object-cover object-center" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 -translate-x-1/2 left-[50%] top-[80%] md:top-auto md:-bottom-2 md:left-20 gap-4 ">
+              <a href="#slide1" class="btn btn-circle text-white bg-c-secondary border-c-secondary">❮</a> 
+              <a href="#slide3" class="btn btn-circle text-white bg-c-secondary border-c-secondary">❯</a>
+            </div>
+          </div> 
+          <!-- slide-3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full object-cover object-center" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 -translate-x-1/2 left-[50%] top-[80%] md:top-auto md:-bottom-2 md:left-20 gap-4 ">
+              <a href="#slide2" class="btn btn-circle text-white bg-c-secondary border-c-secondary">❮</a> 
+              <a href="#slide4" class="btn btn-circle text-white bg-c-secondary border-c-secondary">❯</a>
+            </div>
+          </div> 
+          <!-- slide-4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full object-cover object-center" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 -translate-x-1/2 left-[50%] top-[80%] md:top-auto md:-bottom-2 md:left-20 gap-4 ">
+              <a href="#slide3" class="btn btn-circle text-white bg-c-secondary border-c-secondary">❮</a> 
+              <a href="#slide1" class="btn btn-circle text-white bg-c-secondary border-c-secondary">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="static md:absolute right-9 bottom-9 rounded-2xl bg-c-secondary p-4 md:p-8 md:w-1/2 mt-2 md;mt-0">
+        <h4 class="text-white font-extrabold text-lg md:text-2xl mb-2 md:mb-4">Meet all the heroes from the field</h4>
+        <p class="font-medium leading-relaxed text-c-footer text-sm md:text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+    </div>
   </header>
   <main></main>
   <footer></footer>
