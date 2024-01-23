@@ -9,8 +9,11 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="scripts/script.js"></script>
+  <!-- font-awesome configuration -->
+  <script src="https://kit.fontawesome.com/1104488063.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="styles/style.css">
+  
 </head>
 
 <body>
@@ -121,8 +124,8 @@
         <!-- progress 1 -->
         <div>
           <div>
-            <div class="radial-progress text-c-primary transform scale-125" style="--value:87;" role="progressbar">
-              <p class="text-c-secondary font-extrabold text-lg">87%</p>
+            <div class="radial-progress text-c-primary transform scale-125 rotate-90" style="--value:87;" role="progressbar">
+              <p class="text-c-secondary font-extrabold text-lg transform -rotate-90">87%</p>
             </div>
           </div>
           <div class="mt-7">
@@ -133,8 +136,8 @@
         <!-- progress 2 -->
         <div>
           <div>
-            <div class="radial-progress text-[#49D293] transform scale-125" style="--value:95;" role="progressbar">
-              <p class="text-c-secondary font-extrabold text-lg">95%</p>
+            <div class="radial-progress text-[#49D293] transform scale-125 rotate-90" style="--value:95;" role="progressbar">
+              <p class="text-c-secondary font-extrabold text-lg -rotate-90">95%</p>
             </div>
           </div>
           <div class="mt-7">
@@ -145,20 +148,20 @@
         <!-- progress 3 -->
         <div>
           <div>
-            <div class="radial-progress text-warning transform scale-125" style="--value:90;" role="progressbar">
-              <p class="text-c-secondary font-extrabold text-lg">90%</p>
+            <div class="radial-progress text-warning transform scale-125 rotate-90" style="--value:90;" role="progressbar">
+              <p class="text-c-secondary font-extrabold text-lg -rotate-90">90%</p>
             </div>
           </div>
           <div class="mt-7">
-            <h4 class="text-c-secondary text-xl font-semibold mb-4">Senior Player</h4>
+            <h4 class="text-c-secondary text-xl font-semibold mb-4 ">Senior Player</h4>
             <p class="text-c-third">Amet consectetur. Condimentum<br>dignissim adipiscing .</p>
           </div>
         </div>
         <!-- progress 4 -->
         <div>
           <div>
-            <div class="radial-progress text-[#4C8DF1] transform scale-125" style="--value:80;" role="progressbar">
-              <p class="text-c-secondary font-extrabold text-lg">80%</p>
+            <div class="radial-progress text-[#4C8DF1] transform scale-125 rotate-90" style="--value:80;" role="progressbar">
+              <p class="text-c-secondary font-extrabold text-lg -rotate-90">80%</p>
             </div>
           </div>
           <div class="mt-7">
@@ -327,7 +330,39 @@
     </section>
 
   </main>
-  <footer></footer>
+  <footer class="bg-c-secondary text-base-content md:text-left text-center text-c-footer">
+    <div class="py-10 md:py-20 footer  w-[90%] md:w-5/6 mx-auto grid col-span-2 md:grid-cols-5 ">
+      <aside class="col-span-2 w-full flex flex-col items-center md:items-start">
+        <p class="text-white font-extrabold text-3xl mb-2">Get In Touch</p>
+        <p class="font-medium">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <p class="font-fmedium mt-2"><i class="fa-regular fa-envelope pr-4 text-c-primary"></i>hockeys@support.com</p>
+        <p class="font-medium"><i class="fa-solid fa-phone pr-4 text-c-primary"></i>(+62) 123-321-543</p>
+      </aside> 
+      <nav class="w-full flex flex-col items-center md:items-start">
+        <header class="text-white font-bold text-lg mb-4">Company</header> 
+        <a class="link link-hover font-medium">About us</a>
+        <a class="link link-hover font-medium">Leadership</a>
+        <a class="link link-hover font-medium">Careers</a>
+        <a class="link link-hover font-medium">News & Article</a>
+        <a class="link link-hover font-medium">Legal Notice</a>
+      </nav> 
+      <nav class="w-full flex flex-col items-center md:items-start">
+        <header class="text-white font-bold text-lg mb-4">Support</header> 
+        <a class="link link-hover font-medium">Help Center</a>
+        <a class="link link-hover font-medium">FAQ</a>
+        <a class="link link-hover font-medium">Ticket Support</a>
+        <a class="link link-hover font-medium">Contact Us</a>
+      </nav> 
+      <nav class="md:col-span-1 col-span-2 place-self-center md:place-self-auto flex flex-col items-center md:items-start w-full">
+        <header class="text-white font-bold text-lg mb-4">Services</header> 
+        <a class="link link-hover font-medium">Academy</a>
+        <a class="link link-hover font-medium">Group Lesson</a>
+        <a class="link link-hover font-medium">Private Lesson</a>
+        <a class="link link-hover font-medium">Hockeys for kids</a>
+        <a class="link link-hover font-medium">Hockeys for Adult</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 
 </html>
