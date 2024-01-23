@@ -6,7 +6,8 @@ tailwind.config = {
         'c-primary': '#FF4240',
         'c-secondary': '#131318',
         'c-third': '#13131899',
-        'c-footer': '#13131899'
+        'c-header': '#424247',
+        'c-footer': '#ffffff99'
       }
     }
   }
