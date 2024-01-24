@@ -1,4 +1,4 @@
-# Riders - Static Website
+# Hockey’s - Static Website
 
 ## Project Overview
 
